@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # load dataset
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('./data/dataset.csv')
 
 app = Flask(__name__)
 
@@ -20,7 +20,6 @@ def visualize_data(artist_name):
     return bar_chart.to_html(full_html=False)
 
 
-
 # route for home page
 @app.route('/')
 def home():
@@ -28,7 +27,7 @@ def home():
 
 
 # route for artist results page
-@app.route('/results', methods=['POST'])
+@app.route("/results", methods=['POST'])
 def results():
     # gets the user input from the form
     artist_name = request.form['artist_name']
