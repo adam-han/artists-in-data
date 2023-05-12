@@ -1,6 +1,6 @@
 # artists-in-data
 
-## Made by Adam Han & Donghwui Kim
+## Made by Adam Han
 ___
 
 # Description :page_facing_up:
