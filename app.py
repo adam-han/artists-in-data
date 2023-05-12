@@ -13,6 +13,9 @@ def visualize_data(artist_name):
     # extract the data specfic to the given artist
     artist_data = df.loc[df['Artist'] == artist_name]
 
+    # sorts data by spotify streams
+    artist_data = artist_data.sort_values(by="Stream", ascending=False)
+
     # creates a bar graph of the artist's top songs by streams
     bar_chart = px.bar(artist_data, x='Track', y='Stream')
 
