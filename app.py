@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # load dataset
-df = pd.read_csv('./data/dataset.csv')
+df = pd.read_csv('dataset.csv')
 
 app = Flask(__name__)
 
